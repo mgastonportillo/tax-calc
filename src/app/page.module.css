@@ -121,21 +121,22 @@
 
 @media (max-width: 600px) {
   .page {
-    padding: 32px;
-    padding-bottom: 80px;
+    padding: 0;
   }
 
   .main {
     align-items: center;
   }
 
-  .main ul {
-    text-align: center;
+  .form {
+    min-width: auto;
+    max-width: 90%;
+    padding: 1em;
+    border: none;
+    background: none;
   }
-}
 
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
+  .main .list {
+    font-size: 0.9em;
   }
 }
