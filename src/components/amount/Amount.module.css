@@ -1,0 +1,5 @@
+.wrapper p {
+  color: rgba(var(--gray-rgb), 0.8);
+  font-weight: 700;
+  font-size: 1.5em;
+}

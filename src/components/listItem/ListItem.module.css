@@ -1,0 +1,44 @@
+.li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(var(--gray-rgb), 0.8);
+}
+
+.li:not(:last-of-type) {
+  margin-bottom: 8px;
+}
+
+.li > span:first-child::before {
+  content: "•";
+  padding-right: 0.5em;
+}
+
+.li > span:first-child::after {
+  content: ":";
+}
+
+.li > span:last-child {
+  font-weight: 700;
+}
+
+.li > span:last-child::after {
+  content: "%";
+  font-weight: 400;
+  margin-left: 0.5em;
+}
+
+.li a {
+  transition: all 0.1s ease-in-out;
+}
+
+.li a:hover {
+  text-decoration: underline;
+  padding-left: 0.2em;
+}
+
+@media (max-width: 600px) {
+  .li {
+    font-size: 0.9em;
+  }
+}
